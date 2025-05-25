@@ -1,0 +1,106 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<style>
+.delete-group-container {
+    max-width: 500px;
+    margin: 40px auto;
+    background: #36393f;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.delete-title {
+    color: #fff;
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.warning-text {
+    color: #faa61a;
+    font-size: 1rem;
+    margin-bottom: 25px;
+}
+
+.group-name {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.form-actions {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+}
+
+.btn {
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.2s;
+    cursor: pointer;
+    border: none;
+    font-size: 1rem;
+}
+
+.btn-danger {
+    background: #ed4245;
+    color: #fff;
+}
+
+.btn-danger:hover {
+    background: #c73c3f;
+    color: #fff;
+}
+
+.btn-secondary {
+    background: #4f545c;
+    color: #fff;
+}
+
+.btn-secondary:hover {
+    background: #5d6269;
+    color: #fff;
+}
+
+.back-link {
+    color: #00d4aa;
+    text-decoration: none;
+    font-weight: 500;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+</style>
+
+<div class="container">
+    <a href="{% url 'chats:group_detail' group.id %}" class="back-link">← Назад к группе</a>
+
+    <div class="delete-group-container">
+        <h2 class="delete-title">🗑️ Удалить группу</h2>
+
+        <p class="warning-text">Вы уверены, что хотите удалить группу?</p>
+        <div class="group-name">{{ group.name }}</div>
+
+        <form method="post">
+            {% csrf_token %}
+            <div class="form-actions">
+                <a href="{% url 'chats:group_detail' group.id %}" class="btn btn-secondary">Отмена</a>
+                <button type="submit" class="btn btn-danger">Удалить</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+{% endblock %}

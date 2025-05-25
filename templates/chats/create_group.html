@@ -1,0 +1,94 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Создать группу{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+            <div class="card">
+                <div class="card-header bg-success text-white">
+                    <div class="d-flex align-items-center">
+                        <a href="{% url 'chats:chat' %}" class="btn btn-outline-light btn-sm me-3">
+                            <i class="fas fa-arrow-left"></i>
+                        </a>
+                        <div>
+                            <h4 class="mb-0">Создать новую группу</h4>
+                            <small>Объедините друзей в одном чате</small>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card-body">
+                    <form method="post">
+                        {% csrf_token %}
+                        
+                        <!-- Название группы -->
+                        <div class="mb-4">
+                            <label for="{{ form.name.id_for_label }}" class="form-label">
+                                <i class="fas fa-users me-2"></i>Название группы *
+                            </label>
+                            {{ form.name }}
+                            {% if form.name.errors %}
+                                <div class="text-danger small mt-1">
+                                    {{ form.name.errors.0 }}
+                                </div>
+                            {% endif %}
+                            <div class="form-text">
+                                Придумайте интересное название для вашей группы
+                            </div>
+                        </div>
+
+                        <!-- Выбор участников -->
+                        <div class="mb-4">
+                            <label class="form-label">
+                                <i class="fas fa-user-friends me-2"></i>Добавить участников
+                            </label>
+                            {{ form.members }}
+                            {% if form.members.errors %}
+                                <div class="text-danger small mt-1">
+                                    {{ form.members.errors.0 }}
+                                </div>
+                            {% endif %}
+                            <div class="form-text">
+                                Выберите друзей, которых хотите добавить в группу. Вы автоматически станете администратором.
+                            </div>
+                        </div>
+
+                        <!-- Кнопки -->
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                            <a href="{% url 'chats:chat' %}" class="btn btn-secondary me-md-2">
+                                <i class="fas fa-times me-2"></i>Отмена
+                            </a>
+                            <button type="submit" class="btn btn-success">
+                                <i class="fas fa-plus me-2"></i>Создать группу
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+/* Стили для мультиселекта */
+#id_members {
+    height: 150px;
+}
+
+#id_name {
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    padding: 12px;
+    font-size: 16px;
+}
+
+#id_name:focus {
+    outline: none;
+    border-color: #198754;
+    box-shadow: 0 0 0 0.2rem rgba(25, 135, 84, 0.25);
+}
+</style>
+{% endblock %}

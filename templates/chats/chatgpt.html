@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+  <h2>Чат с ChatGPT</h2>
+  <form method="post">
+    {% csrf_token %}
+    <textarea name="message" rows="3" cols="50" placeholder="Введите сообщение..."></textarea><br>
+    <button type="submit">Отправить</button>
+  </form>
+
+  {% if response %}
+    <h3>Ответ от ChatGPT:</h3>
+    <p>{{ response }}</p>
+  {% endif %}
+{% endblock %}

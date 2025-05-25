@@ -1,0 +1,550 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<style>
+/* Discord-like group chat style */
+.group-chat-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #36393f;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+}
+
+.group-header {
+    background: #2f3136;
+    padding: 15px 20px;
+    border-bottom: 1px solid #40444b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.group-header h2 {
+    color: #fff;
+    margin: 0;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.group-members-count {
+    color: #b9bbbe;
+    font-size: 0.9rem;
+}
+
+.messages-container {
+    height: 400px;
+    overflow-y: auto;
+    padding: 20px;
+    background: #36393f;
+}
+
+.message {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.message-avatar {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #5865f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.9rem;
+    flex-shrink: 0;
+}
+
+.message-content {
+    flex: 1;
+}
+
+.message-header {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    margin-bottom: 2px;
+}
+
+.message-username {
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.message-time {
+    color: #72767d;
+    font-size: 0.8rem;
+}
+
+.message-text {
+    color: #dcddde;
+    line-height: 1.4;
+    margin: 0;
+}
+
+/* Стили для файлов */
+.file-message {
+    background: transparent !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    max-width: 350px;
+    margin-top: 8px;
+}
+
+.file-container {
+    background: #2f3136;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #40444b;
+    transition: transform 0.2s ease;
+}
+
+.file-container:hover {
+    transform: scale(1.02);
+}
+
+.file-image {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    display: block;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.file-image:hover {
+    opacity: 0.9;
+}
+
+.file-video {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.file-document {
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: #f3f4f5;
+    transition: background-color 0.2s ease;
+}
+
+.file-document:hover {
+    background: rgba(255,255,255,0.1);
+    color: #f3f4f5;
+}
+
+.file-icon {
+    font-size: 24px;
+    color: #43b581;
+    width: 32px;
+    text-align: center;
+}
+
+.file-info {
+    flex: 1;
+}
+
+.file-name {
+    font-weight: 500;
+    margin-bottom: 2px;
+    word-break: break-all;
+}
+
+.file-size {
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+
+.download-icon {
+    color: #b9bbbe;
+    font-size: 18px;
+}
+
+/* Модальное окно для изображений */
+.image-modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.9);
+    animation: fadeIn 0.3s ease;
+}
+
+.image-modal.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 8px;
+}
+
+.close-modal {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close-modal:hover {
+    color: #ccc;
+}
+
+.message-form {
+    background: #2f3136;
+    padding: 20px;
+    border-top: 1px solid #40444b;
+}
+
+.message-input-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.file-input {
+    display: none;
+}
+
+.file-btn {
+    background: #43b581;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 46px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.19rem;
+    transition: background 0.2s, transform 0.13s;
+    cursor: pointer;
+}
+
+.file-btn:hover {
+    background: #3ca374;
+    transform: scale(1.09);
+}
+
+.message-input {
+    flex: 1;
+    background: #40444b;
+    border: none;
+    padding: 12px 15px;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 0.95rem;
+}
+
+.message-input:focus {
+    outline: none;
+    background: #484c52;
+}
+
+.message-input::placeholder {
+    color: #72767d;
+}
+
+.send-button {
+    background: #5865f2;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 25px;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.send-button:hover {
+    background: #4752c4;
+}
+
+.back-link {
+    color: #00d4aa;
+    text-decoration: none;
+    font-weight: 500;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+/* Скролл */
+.messages-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.messages-container::-webkit-scrollbar-track {
+    background: #2f3136;
+}
+
+.messages-container::-webkit-scrollbar-thumb {
+    background: #5865f2;
+    border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+    .group-chat-container {
+        margin: 10px;
+        border-radius: 8px;
+    }
+    
+    .messages-container {
+        height: 300px;
+        padding: 15px;
+    }
+    
+    .group-header {
+        padding: 12px 15px;
+    }
+    
+    .file-container {
+        max-width: 280px;
+    }
+}
+
+@media (max-width: 600px) {
+    .file-container {
+        max-width: 250px;
+    }
+}
+</style>
+
+<!-- FontAwesome для иконок -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+<div class="container mt-4">
+    <a href="{% url 'chats:chat' %}" class="back-link">← Назад к чатам</a>
+    
+    <div class="group-chat-container">
+        <!-- Заголовок группы -->
+        <div class="group-header">
+            <div>
+                <h2>{{ group.name }}</h2>
+                <span class="group-members-count">{{ group.members.count }} участников</span>
+            </div>
+            <a href="{% url 'chats:group_detail' group.id %}" 
+               style="background: #4f545c; padding: 8px 16px; border-radius: 6px; color: #fff; text-decoration: none; font-size: 0.9rem;">
+                ℹ️ Инфо о группе
+            </a>
+        </div>
+        
+        <!-- Сообщения -->
+        <div class="messages-container" id="messages-container">
+            {% if messages %}
+                {% for message in messages %}
+                    <div class="message">
+                        <div class="message-avatar">
+                            {{ message.sender.username|first|upper }}
+                        </div>
+                        <div class="message-content">
+                            <div class="message-header">
+                                <span class="message-username">{{ message.sender.username }}</span>
+                                <span class="message-time">{{ message.timestamp|date:"H:i" }}</span>
+                            </div>
+                            
+                            {% if message.file %}
+                                {% if message.message %}
+                                    <p class="message-text">{{ message.message }}</p>
+                                {% endif %}
+                                
+                                <div class="file-message">
+                                    <div class="file-container">
+                                        {% if message.file_type == 'image' %}
+                                            <img src="{{ message.file.url }}" 
+                                                 alt="Изображение" 
+                                                 class="file-image" 
+                                                 onclick="openImageModal('{{ message.file.url }}')">
+                                        {% elif message.file_type == 'video' %}
+                                            <video controls class="file-video">
+                                                <source src="{{ message.file.url }}" type="video/mp4">
+                                                Ваш браузер не поддерживает видео.
+                                            </video>
+                                        {% else %}
+                                            <a href="{{ message.file.url }}" 
+                                               download 
+                                               class="file-document">
+                                                <div class="file-icon">
+                                                    <i class="fas fa-file"></i>
+                                                </div>
+                                                <div class="file-info">
+                                                    <div class="file-name">{{ message.file.name|slice:":-36" }}</div>
+                                                    <div class="file-size">Документ</div>
+                                                </div>
+                                                <div class="download-icon">
+                                                    <i class="fas fa-download"></i>
+                                                </div>
+                                            </a>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                            {% else %}
+                                <p class="message-text">{{ message.message }}</p>
+                            {% endif %}
+                        </div>
+                    </div>
+                {% endfor %}
+            {% else %}
+                <div style="text-align: center; color: #72767d; margin-top: 50px;">
+                    <p>Пока нет сообщений в этой группе</p>
+                    <p>Будьте первым, кто напишет!</p>
+                </div>
+            {% endif %}
+        </div>
+        
+        <!-- Форма отправки сообщения -->
+        <div class="message-form">
+            <div class="message-input-container">
+                <!-- Скрытый input для файлов -->
+                <input type="file" 
+                       id="file-input" 
+                       class="file-input" 
+                       accept="image/*,video/*,.pdf,.doc,.docx,.txt">
+                
+                <!-- Кнопка прикрепления файла -->
+                <label for="file-input" class="file-btn" title="Прикрепить файл">
+                    <i class="fa fa-paperclip"></i>
+                </label>
+                
+                <!-- Форма для текстовых сообщений -->
+                <form method="post" style="display: flex; flex: 1; gap: 10px;">
+                    {% csrf_token %}
+                    <input 
+                        type="text" 
+                        name="message" 
+                        id="message-input"
+                        class="message-input" 
+                        placeholder="Написать сообщение в {{ group.name }}..."
+                        autocomplete="off"
+                        maxlength="512"
+                    >
+                    <button type="submit" class="send-button">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Модальное окно для изображений -->
+<div id="imageModal" class="image-modal">
+    <span class="close-modal" onclick="closeImageModal()">&times;</span>
+    <img id="modalImage" class="modal-content">
+</div>
+
+<script>
+// Автоскролл к последнему сообщению
+document.addEventListener('DOMContentLoaded', function() {
+    const messagesContainer = document.getElementById('messages-container');
+    messagesContainer.scrollTop = messagesContainer.scrollHeight;
+});
+
+// Отправка формы по Enter
+document.getElementById('message-input').addEventListener('keypress', function(e) {
+    if (e.key === 'Enter') {
+        e.preventDefault();
+        this.closest('form').submit();
+    }
+});
+
+// Обработка загрузки файлов
+const fileInput = document.getElementById('file-input');
+const messageInput = document.getElementById('message-input');
+
+fileInput.addEventListener('change', function(e) {
+    const file = e.target.files[0];
+    if (file) {
+        const formData = new FormData();
+        formData.append('file', file);
+        formData.append('message', messageInput.value.trim());
+        
+        // Замените этот URL на правильный для вашего группового чата
+        fetch("{% url 'chats:upload_file_group' group.id %}", {
+            method: 'POST',
+            body: formData,
+            headers: {
+                'X-CSRFToken': getCookie('csrftoken')
+            }
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                // Перезагружаем страницу или добавляем сообщение динамически
+                location.reload();
+            } else {
+                alert('Ошибка загрузки файла: ' + (data.error || 'Неизвестная ошибка'));
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            alert('Произошла ошибка при загрузке файла');
+        });
+        
+        // Очищаем поля
+        fileInput.value = '';
+        messageInput.value = '';
+    }
+});
+
+// Функции для модального окна
+function openImageModal(imageSrc) {
+    const modal = document.getElementById('imageModal');
+    const modalImg = document.getElementById('modalImage');
+    modal.classList.add('active');
+    modalImg.src = imageSrc;
+}
+
+function closeImageModal() {
+    const modal = document.getElementById('imageModal');
+    modal.classList.remove('active');
+}
+
+// Закрытие модального окна по клику вне изображения
+document.getElementById('imageModal').addEventListener('click', function(e) {
+    if (e.target === this) {
+        closeImageModal();
+    }
+});
+
+// Функция для получения CSRF токена
+function getCookie(name) {
+    let cookieValue = null;
+    if (document.cookie && document.cookie !== '') {
+        const cookies = document.cookie.split(';');
+        for (let i = 0; i < cookies.length; i++) {
+            const cookie = cookies[i].trim();
+            if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                break;
+            }
+        }
+    }
+    return cookieValue;
+}
+</script>
+{% endblock %}

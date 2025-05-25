@@ -1,0 +1,203 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<style>
+.edit-group-container {
+    max-width: 500px;
+    margin: 40px auto;
+    background: #36393f;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+}
+
+.form-title {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    color: #b9bbbe;
+    font-weight: 600;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.form-control {
+    background: #40444b;
+    border: 1px solid #40444b;
+    border-radius: 6px;
+    padding: 12px;
+    color: #fff;
+    width: 100%;
+    font-size: 1rem;
+    transition: border-color 0.2s;
+}
+
+.form-control:focus {
+    background: #40444b;
+    border-color: #5865f2;
+    outline: none;
+    color: #fff;
+}
+
+.form-control::placeholder {
+    color: #72767d;
+}
+
+.btn {
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.2s;
+    cursor: pointer;
+    border: none;
+    font-size: 1rem;
+}
+
+.btn-primary {
+    background: #5865f2;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background: #4752c4;
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn-secondary {
+    background: #4f545c;
+    color: #fff;
+}
+
+.btn-secondary:hover {
+    background: #5d6269;
+    color: #fff;
+    text-decoration: none;
+}
+
+.form-actions {
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end;
+    margin-top: 25px;
+}
+
+.back-link {
+    color: #00d4aa;
+    text-decoration: none;
+    font-weight: 500;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+.current-info {
+    background: #2f3136;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border-left: 3px solid #faa61a;
+}
+
+.current-info-label {
+    color: #faa61a;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.current-info-value {
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+    .edit-group-container {
+        margin: 20px;
+        padding: 20px;
+    }
+    
+    .form-actions {
+        flex-direction: column;
+    }
+    
+    .btn {
+        text-align: center;
+    }
+}
+</style>
+
+<div class="container">
+    <a href="{% url 'chats:group_detail' group.id %}" class="back-link">← Назад к группе</a>
+    
+    <div class="edit-group-container">
+        <h2 class="form-title">✏️ Редактировать группу</h2>
+        
+        <div class="current-info">
+            <div class="current-info-label">Текущее название:</div>
+            <div class="current-info-value">{{ group.name }}</div>
+        </div>
+        
+        <form method="post">
+            {% csrf_token %}
+            
+            <div class="form-group">
+                <label for="{{ form.name.id_for_label }}" class="form-label">
+                    {{ form.name.label }}
+                </label>
+                {{ form.name }}
+                {% if form.name.errors %}
+                    <div style="color: #ed4245; font-size: 0.85rem; margin-top: 5px;">
+                        {% for error in form.name.errors %}
+                            <div>{{ error }}</div>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            </div>
+            
+            <div class="form-actions">
+                <a href="{% url 'chats:group_detail' group.id %}" class="btn btn-secondary">
+                    Отмена
+                </a>
+                <button type="submit" class="btn btn-primary">
+                    Сохранить изменения
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Сообщения -->
+{% if messages %}
+    <div style="position: fixed; top: 20px; right: 20px; z-index: 1000;">
+        {% for message in messages %}
+            <div class="alert alert-{{ message.tags }} alert-dismissible fade show"
+                role="alert"
+                {% if message.tags == 'error' %}
+                    style="background: #ed4245; color: white; border: none; border-radius: 8px; margin-bottom: 10px; padding: 12px 20px;"
+                {% else %}
+                    style="background: #43b581; color: white; border: none; border-radius: 8px; margin-bottom: 10px; padding: 12px 20px;"
+                {% endif %}>
+                {{ message }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" style="filter: invert(1); margin-left: 10px;"></button>
+            </div>
+        {% endfor %}
+    </div>
+{% endif %}
+
+{% endblock %}

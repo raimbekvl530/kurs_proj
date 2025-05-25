@@ -1,0 +1,387 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<style>
+.manage-members-container {
+    max-width: 700px;
+    margin: 40px auto;
+    background: #36393f;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+}
+
+.page-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 30px;
+    text-align: center;
+    color: white;
+}
+
+.page-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.group-name {
+    font-size: 1rem;
+    opacity: 0.9;
+    margin-top: 5px;
+}
+
+.content-section {
+    padding: 30px;
+}
+
+.section-title {
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.add-member-form {
+    background: #2f3136;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    border: 1px solid #40444b;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-label {
+    color: #b9bbbe;
+    font-weight: 600;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.form-control {
+    background: #40444b;
+    border: 1px solid #40444b;
+    border-radius: 6px;
+    padding: 12px;
+    color: #fff;
+    width: 100%;
+    font-size: 1rem;
+    transition: border-color 0.2s;
+}
+
+.form-control:focus {
+    background: #40444b;
+    border-color: #5865f2;
+    outline: none;
+    color: #fff;
+}
+
+.form-control:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.btn {
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.2s;
+    cursor: pointer;
+    border: none;
+    font-size: 1rem;
+}
+
+.btn-primary {
+    background: #5865f2;
+    color: #fff;
+}
+
+.btn-primary:hover:not(:disabled) {
+    background: #4752c4;
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn-danger {
+    background: #ed4245;
+    color: #fff;
+}
+
+.btn-danger:hover {
+    background: #c53030;
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn-secondary {
+    background: #4f545c;
+    color: #fff;
+}
+
+.btn-secondary:hover {
+    background: #5d6269;
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.members-list {
+    background: #2f3136;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #40444b;
+}
+
+.member-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    border-bottom: 1px solid #40444b;
+    transition: background 0.2s;
+}
+
+.member-item:last-child {
+    border-bottom: none;
+}
+
+.member-item:hover {
+    background: #32353b;
+}
+
+.member-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.member-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #5865f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.member-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.member-name {
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.member-role {
+    color: #b9bbbe;
+    font-size: 0.85rem;
+}
+
+.admin-badge {
+    background: #faa61a;
+    color: #fff;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    margin-left: 8px;
+}
+
+.member-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.back-link {
+    color: #00d4aa;
+    text-decoration: none;
+    font-weight: 500;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+.empty-state {
+    text-align: center;
+    padding: 40px 20px;
+    color: #72767d;
+}
+
+.help-text {
+    color: #72767d;
+    font-size: 0.85rem;
+    margin-top: 5px;
+}
+
+.stats-info {
+    background: #2f3136;
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border-left: 3px solid #43b581;
+}
+
+.stats-text {
+    color: #b9bbbe;
+    margin: 0;
+}
+
+.no-users-message {
+    background: #2f3136;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #40444b;
+    text-align: center;
+    color: #72767d;
+}
+
+@media (max-width: 768px) {
+    .manage-members-container {
+        margin: 20px;
+    }
+    
+    .content-section {
+        padding: 20px;
+    }
+    
+    .member-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    
+    .member-actions {
+        width: 100%;
+        justify-content: flex-end;
+    }
+    
+    .btn {
+        font-size: 0.9rem;
+        padding: 10px 16px;
+    }
+}
+</style>
+
+<div class="container">
+    <a href="{% url 'chats:group_detail' group.id %}" class="back-link">← Назад к группе</a>
+    
+    <div class="manage-members-container">
+        <div class="page-header">
+            <h1 class="page-title">👥 Управление участниками</h1>
+            <div class="group-name">{{ group.name }}</div>
+        </div>
+        
+        <div class="content-section">
+            <!-- Статистика -->
+            <div class="stats-info">
+                <p class="stats-text">
+                    В группе сейчас {{ members.count }} участник{{ members.count|pluralize:"ов" }}
+                </p>
+            </div>
+            
+            <!-- Форма добавления участника -->
+            <div class="section-title">
+                ➕ Добавить участника
+            </div>
+            
+            {% if available_users.exists %}
+                <div class="add-member-form">
+                    <form method="post">
+                        {% csrf_token %}
+                        <div class="form-group">
+                            <label for="member" class="form-label">
+                                Выберите пользователя для добавления
+                            </label>
+                            <select name="member" id="member" class="form-control" required>
+                                <option value="">-- Выберите пользователя --</option>
+                                {% for user in available_users %}
+                                    <option value="{{ user.id }}">{{ user.username }} ({{ user.email }})</option>
+                                {% endfor %}
+                            </select>
+                            <div class="help-text">Можно добавить только друзей, которые ещё не состоят в группе</div>
+                        </div>
+                        
+                        <button type="submit" name="add_member" class="btn btn-primary">
+                            ➕ Добавить в группу
+                        </button>
+                    </form>
+                </div>
+            {% else %}
+                <div class="no-users-message">
+                    <p>Нет доступных пользователей для добавления</p>
+                    <small>Все ваши друзья уже состоят в этой группе или у вас нет друзей</small>
+                </div>
+            {% endif %}
+            
+            <!-- Список участников -->
+            <div class="section-title">
+                👥 Текущие участники ({{ members.count }})
+            </div>
+            
+            {% if members.exists %}
+                <div class="members-list">
+                    {% for member in members %}
+                        <div class="member-item">
+                            <div class="member-info">
+                                <div class="member-avatar">
+                                    {{ member.username|first|upper }}
+                                </div>
+                                <div class="member-details">
+                                    <span class="member-name">
+                                        {{ member.username }}
+                                        {% if member == group.admin %}
+                                            <span class="admin-badge">Админ</span>
+                                        {% endif %}
+                                    </span>
+                                    <span class="member-role">{{ member.email }}</span>
+                                </div>
+                            </div>
+                            
+                            <div class="member-actions">
+                                {% if member != group.admin and user == group.admin %}
+                                    <form method="post" style="display: inline;">
+                                        {% csrf_token %}
+                                        <input type="hidden" name="remove_member" value="{{ member.id }}">
+                                        <button type="submit" class="btn btn-danger" 
+                                                onclick="return confirm('Вы уверены, что хотите удалить {{ member.username }} из группы?')">
+                                            🗑️ Удалить
+                                        </button>
+                                    </form>
+                                {% elif member == group.admin %}
+                                    <span class="btn btn-secondary" disabled>👑 Владелец</span>
+                                {% endif %}
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            {% else %}
+                <div class="empty-state">
+                    <p>В группе пока нет участников</p>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}

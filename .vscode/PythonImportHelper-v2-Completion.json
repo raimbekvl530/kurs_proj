@@ -1,0 +1,1672 @@
+[
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "django.db.models.deletion",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.db.models.deletion",
+        "description": "django.db.models.deletion",
+        "detail": "django.db.models.deletion",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "forms",
+        "importPath": "django",
+        "description": "django",
+        "isExtraImport": true,
+        "detail": "django",
+        "documentation": {}
+    },
+    {
+        "label": "UserCreationForm",
+        "importPath": "django.contrib.auth.forms",
+        "description": "django.contrib.auth.forms",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.forms",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "post_save",
+        "importPath": "django.db.models.signals",
+        "description": "django.db.models.signals",
+        "isExtraImport": true,
+        "detail": "django.db.models.signals",
+        "documentation": {}
+    },
+    {
+        "label": "Image",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "reverse_lazy",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "reverse_lazy",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "views",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "CreateView",
+        "importPath": "django.views.generic",
+        "description": "django.views.generic",
+        "isExtraImport": true,
+        "detail": "django.views.generic",
+        "documentation": {}
+    },
+    {
+        "label": "UpdateView",
+        "importPath": "django.views.generic",
+        "description": "django.views.generic",
+        "isExtraImport": true,
+        "detail": "django.views.generic",
+        "documentation": {}
+    },
+    {
+        "label": "LoginRequiredMixin",
+        "importPath": "django.contrib.auth.mixins",
+        "description": "django.contrib.auth.mixins",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.mixins",
+        "documentation": {}
+    },
+    {
+        "label": "login_required",
+        "importPath": "django.contrib.auth.decorators",
+        "description": "django.contrib.auth.decorators",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "login_required",
+        "importPath": "django.contrib.auth.decorators",
+        "description": "django.contrib.auth.decorators",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "login_required",
+        "importPath": "django.contrib.auth.decorators",
+        "description": "django.contrib.auth.decorators",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "user_logged_in",
+        "importPath": "django.contrib.auth.signals",
+        "description": "django.contrib.auth.signals",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.signals",
+        "documentation": {}
+    },
+    {
+        "label": "user_logged_out",
+        "importPath": "django.contrib.auth.signals",
+        "description": "django.contrib.auth.signals",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.signals",
+        "documentation": {}
+    },
+    {
+        "label": "receiver",
+        "importPath": "django.dispatch",
+        "description": "django.dispatch",
+        "isExtraImport": true,
+        "detail": "django.dispatch",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "AsyncWebsocketConsumer",
+        "importPath": "channels.generic.websocket",
+        "description": "channels.generic.websocket",
+        "isExtraImport": true,
+        "detail": "channels.generic.websocket",
+        "documentation": {}
+    },
+    {
+        "label": "sync_to_async",
+        "importPath": "asgiref.sync",
+        "description": "asgiref.sync",
+        "isExtraImport": true,
+        "detail": "asgiref.sync",
+        "documentation": {}
+    },
+    {
+        "label": "ChatRoom",
+        "importPath": "chats.models",
+        "description": "chats.models",
+        "isExtraImport": true,
+        "detail": "chats.models",
+        "documentation": {}
+    },
+    {
+        "label": "ChatRoom",
+        "importPath": "chats.models",
+        "description": "chats.models",
+        "isExtraImport": true,
+        "detail": "chats.models",
+        "documentation": {}
+    },
+    {
+        "label": "ChatRoom",
+        "importPath": "chats.models",
+        "description": "chats.models",
+        "isExtraImport": true,
+        "detail": "chats.models",
+        "documentation": {}
+    },
+    {
+        "label": "ChatRoom",
+        "importPath": "chats.models",
+        "description": "chats.models",
+        "isExtraImport": true,
+        "detail": "chats.models",
+        "documentation": {}
+    },
+    {
+        "label": "Friend",
+        "importPath": "friends.models",
+        "description": "friends.models",
+        "isExtraImport": true,
+        "detail": "friends.models",
+        "documentation": {}
+    },
+    {
+        "label": "Friend",
+        "importPath": "friends.models",
+        "description": "friends.models",
+        "isExtraImport": true,
+        "detail": "friends.models",
+        "documentation": {}
+    },
+    {
+        "label": "Friend",
+        "importPath": "friends.models",
+        "description": "friends.models",
+        "isExtraImport": true,
+        "detail": "friends.models",
+        "documentation": {}
+    },
+    {
+        "label": "Q",
+        "importPath": "django.db.models",
+        "description": "django.db.models",
+        "isExtraImport": true,
+        "detail": "django.db.models",
+        "documentation": {}
+    },
+    {
+        "label": "Q",
+        "importPath": "django.db.models",
+        "description": "django.db.models",
+        "isExtraImport": true,
+        "detail": "django.db.models",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "ProtocolTypeRouter",
+        "importPath": "channels.routing",
+        "description": "channels.routing",
+        "isExtraImport": true,
+        "detail": "channels.routing",
+        "documentation": {}
+    },
+    {
+        "label": "URLRouter",
+        "importPath": "channels.routing",
+        "description": "channels.routing",
+        "isExtraImport": true,
+        "detail": "channels.routing",
+        "documentation": {}
+    },
+    {
+        "label": "get_asgi_application",
+        "importPath": "django.core.asgi",
+        "description": "django.core.asgi",
+        "isExtraImport": true,
+        "detail": "django.core.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "AuthMiddlewareStack",
+        "importPath": "channels.auth",
+        "description": "channels.auth",
+        "isExtraImport": true,
+        "detail": "channels.auth",
+        "documentation": {}
+    },
+    {
+        "label": "routing",
+        "importPath": "chats",
+        "description": "chats",
+        "isExtraImport": true,
+        "detail": "chats",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "static",
+        "importPath": "django.conf.urls.static",
+        "description": "django.conf.urls.static",
+        "isExtraImport": true,
+        "detail": "django.conf.urls.static",
+        "documentation": {}
+    },
+    {
+        "label": "get_wsgi_application",
+        "importPath": "django.core.wsgi",
+        "description": "django.core.wsgi",
+        "isExtraImport": true,
+        "detail": "django.core.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "Profile",
+        "importPath": "accounts.models",
+        "description": "accounts.models",
+        "isExtraImport": true,
+        "detail": "accounts.models",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "accounts.migrations.0001_initial",
+        "description": "accounts.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Profile',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),",
+        "detail": "accounts.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "accounts.migrations.0002_alter_profile_thumbnail",
+        "description": "accounts.migrations.0002_alter_profile_thumbnail",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('accounts', '0001_initial'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='profile',\n            name='thumbnail',\n            field=models.ImageField(default='images/default_thumbnail', upload_to='images'),\n        ),",
+        "detail": "accounts.migrations.0002_alter_profile_thumbnail",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "accounts.migrations.0003_alter_profile_user",
+        "description": "accounts.migrations.0003_alter_profile_user",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n        ('accounts', '0002_alter_profile_thumbnail'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='profile',\n            name='user',\n            field=models.OneToOneField(on_delete=django.db.models.deletion.CASCADE, to=settings.AUTH_USER_MODEL),",
+        "detail": "accounts.migrations.0003_alter_profile_user",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "accounts.migrations.0004_alter_profile_thumbnail",
+        "description": "accounts.migrations.0004_alter_profile_thumbnail",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('accounts', '0003_alter_profile_user'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='profile',\n            name='thumbnail',\n            field=models.ImageField(default='images/default_thumbnail.png', upload_to='images'),\n        ),",
+        "detail": "accounts.migrations.0004_alter_profile_thumbnail",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "accounts.migrations.0005_alter_profile_thumbnail",
+        "description": "accounts.migrations.0005_alter_profile_thumbnail",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('accounts', '0004_alter_profile_thumbnail'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='profile',\n            name='thumbnail',\n            field=models.ImageField(default='img/default_thumbnail.png', upload_to='images'),\n        ),",
+        "detail": "accounts.migrations.0005_alter_profile_thumbnail",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "accounts.migrations.0006_alter_profile_thumbnail",
+        "description": "accounts.migrations.0006_alter_profile_thumbnail",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('accounts', '0005_alter_profile_thumbnail'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='profile',\n            name='thumbnail',\n            field=models.ImageField(default='default_thumbnail.png', upload_to='images'),\n        ),",
+        "detail": "accounts.migrations.0006_alter_profile_thumbnail",
+        "documentation": {}
+    },
+    {
+        "label": "ProfileAdmin",
+        "kind": 6,
+        "importPath": "accounts.admin",
+        "description": "accounts.admin",
+        "peekOfCode": "class ProfileAdmin(admin.ModelAdmin):\n    list_display = ['user', 'thumbnail', 'is_active']",
+        "detail": "accounts.admin",
+        "documentation": {}
+    },
+    {
+        "label": "AccountsConfig",
+        "kind": 6,
+        "importPath": "accounts.apps",
+        "description": "accounts.apps",
+        "peekOfCode": "class AccountsConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'accounts'",
+        "detail": "accounts.apps",
+        "documentation": {}
+    },
+    {
+        "label": "SignupForm",
+        "kind": 6,
+        "importPath": "accounts.forms",
+        "description": "accounts.forms",
+        "peekOfCode": "class SignupForm(UserCreationForm):\n\t\tclass Meta :\n\t\t\tmodel = User\n\t\t\tfields = ('username', 'password1', 'password2','email')\nclass EditProfileForm(forms.ModelForm):\n    class Meta :\n        model = Profile\n        fields = ('thumbnail',)",
+        "detail": "accounts.forms",
+        "documentation": {}
+    },
+    {
+        "label": "EditProfileForm",
+        "kind": 6,
+        "importPath": "accounts.forms",
+        "description": "accounts.forms",
+        "peekOfCode": "class EditProfileForm(forms.ModelForm):\n    class Meta :\n        model = Profile\n        fields = ('thumbnail',)",
+        "detail": "accounts.forms",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\tmodel",
+        "kind": 5,
+        "importPath": "accounts.forms",
+        "description": "accounts.forms",
+        "peekOfCode": "\t\t\tmodel = User\n\t\t\tfields = ('username', 'password1', 'password2','email')\nclass EditProfileForm(forms.ModelForm):\n    class Meta :\n        model = Profile\n        fields = ('thumbnail',)",
+        "detail": "accounts.forms",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\tfields",
+        "kind": 5,
+        "importPath": "accounts.forms",
+        "description": "accounts.forms",
+        "peekOfCode": "\t\t\tfields = ('username', 'password1', 'password2','email')\nclass EditProfileForm(forms.ModelForm):\n    class Meta :\n        model = Profile\n        fields = ('thumbnail',)",
+        "detail": "accounts.forms",
+        "documentation": {}
+    },
+    {
+        "label": "Profile",
+        "kind": 6,
+        "importPath": "accounts.models",
+        "description": "accounts.models",
+        "peekOfCode": "class Profile(models.Model):\n    user = models.OneToOneField(User, on_delete = models.CASCADE)\n    thumbnail = models.ImageField(upload_to=\"images\",  default=\"default_thumbnail.png\")\n    is_active = models.BooleanField(default=False)\n    def save(self, *args, **kwargs):\n        super().save(*args, **kwargs)\n        if self.thumbnail:\n            img = Image.open(self.thumbnail.path)\n            if img.height > 300 or img.width > 300:\n                output_size = (300, 300)",
+        "detail": "accounts.models",
+        "documentation": {}
+    },
+    {
+        "label": "create_profile",
+        "kind": 2,
+        "importPath": "accounts.models",
+        "description": "accounts.models",
+        "peekOfCode": "def create_profile(sender, **kwargs):\n\tif kwargs['created']:\n\t\tProfile.objects.get_or_create(user=kwargs['instance'])\npost_save.connect(create_profile,User)",
+        "detail": "accounts.models",
+        "documentation": {}
+    },
+    {
+        "label": "app_name",
+        "kind": 5,
+        "importPath": "accounts.urls",
+        "description": "accounts.urls",
+        "peekOfCode": "app_name = \"accounts\"\nurlpatterns = [\n    path('settings/', views.settings, name = \"settings\"),\n    path('edit-profile/',views.EditProfile.as_view(), name = \"edit_profile\"),\n    path('signup/', views.Signup.as_view(), name= \"signup\"),\n\tpath('login/', auth.LoginView.as_view(template_name=\"accounts/registration/login.html\"), name= \"login\"),\n\tpath('logout/', auth.LogoutView.as_view(), name= \"logout\"),\n    # - section of reset password  \n    path('password-reset/', auth.PasswordResetView.as_view(template_name=\"accounts/registration/password_reset.html\", \n    email_template_name=\"accounts/registration/password_reset_email.html\",success_url=reverse_lazy(\"accounts:password_reset_done\")),name= \"password_reset\"),",
+        "detail": "accounts.urls",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "accounts.urls",
+        "description": "accounts.urls",
+        "peekOfCode": "urlpatterns = [\n    path('settings/', views.settings, name = \"settings\"),\n    path('edit-profile/',views.EditProfile.as_view(), name = \"edit_profile\"),\n    path('signup/', views.Signup.as_view(), name= \"signup\"),\n\tpath('login/', auth.LoginView.as_view(template_name=\"accounts/registration/login.html\"), name= \"login\"),\n\tpath('logout/', auth.LogoutView.as_view(), name= \"logout\"),\n    # - section of reset password  \n    path('password-reset/', auth.PasswordResetView.as_view(template_name=\"accounts/registration/password_reset.html\", \n    email_template_name=\"accounts/registration/password_reset_email.html\",success_url=reverse_lazy(\"accounts:password_reset_done\")),name= \"password_reset\"),\n    path('password-reset/done/', auth.PasswordResetDoneView.as_view(template_name=\"accounts/registration/password_reset_done.html\"),",
+        "detail": "accounts.urls",
+        "documentation": {}
+    },
+    {
+        "label": "Signup",
+        "kind": 6,
+        "importPath": "accounts.views",
+        "description": "accounts.views",
+        "peekOfCode": "class Signup(CreateView):\n\tform_class = SignupForm\n\ttemplate_name = \"accounts/registration/signup.html\"\n\tsuccess_url = reverse_lazy(\"accounts:login\")\nclass EditProfile(LoginRequiredMixin, UpdateView):\n    model = Profile\n    form_class = EditProfileForm\n    template_name = \"accounts/edit_profile.html\"\n    success_url = \"/\"\n    def get_object(self):",
+        "detail": "accounts.views",
+        "documentation": {}
+    },
+    {
+        "label": "EditProfile",
+        "kind": 6,
+        "importPath": "accounts.views",
+        "description": "accounts.views",
+        "peekOfCode": "class EditProfile(LoginRequiredMixin, UpdateView):\n    model = Profile\n    form_class = EditProfileForm\n    template_name = \"accounts/edit_profile.html\"\n    success_url = \"/\"\n    def get_object(self):\n        return Profile.objects.get(user=self.request.user)\n@login_required\ndef settings(request):\n    user_profile = Profile.objects.filter(user=request.user)",
+        "detail": "accounts.views",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "kind": 2,
+        "importPath": "accounts.views",
+        "description": "accounts.views",
+        "peekOfCode": "def settings(request):\n    user_profile = Profile.objects.filter(user=request.user)\n    return render(request,\"accounts/settings.html\",{'user_profile':user_profile})\n@receiver(user_logged_in)\ndef online_user(sender,request, user, **kwargs):\n    user = Profile.objects.filter(user=user).update(is_active = True)\n@receiver(user_logged_out)   \ndef offline_user(sender,request,user, **kwargs):\n    user = Profile.objects.filter(user=user).update(is_active = False)",
+        "detail": "accounts.views",
+        "documentation": {}
+    },
+    {
+        "label": "online_user",
+        "kind": 2,
+        "importPath": "accounts.views",
+        "description": "accounts.views",
+        "peekOfCode": "def online_user(sender,request, user, **kwargs):\n    user = Profile.objects.filter(user=user).update(is_active = True)\n@receiver(user_logged_out)   \ndef offline_user(sender,request,user, **kwargs):\n    user = Profile.objects.filter(user=user).update(is_active = False)",
+        "detail": "accounts.views",
+        "documentation": {}
+    },
+    {
+        "label": "offline_user",
+        "kind": 2,
+        "importPath": "accounts.views",
+        "description": "accounts.views",
+        "peekOfCode": "def offline_user(sender,request,user, **kwargs):\n    user = Profile.objects.filter(user=user).update(is_active = False)",
+        "detail": "accounts.views",
+        "documentation": {}
+    },
+    {
+        "label": "\tform_class",
+        "kind": 5,
+        "importPath": "accounts.views",
+        "description": "accounts.views",
+        "peekOfCode": "\tform_class = SignupForm\n\ttemplate_name = \"accounts/registration/signup.html\"\n\tsuccess_url = reverse_lazy(\"accounts:login\")\nclass EditProfile(LoginRequiredMixin, UpdateView):\n    model = Profile\n    form_class = EditProfileForm\n    template_name = \"accounts/edit_profile.html\"\n    success_url = \"/\"\n    def get_object(self):\n        return Profile.objects.get(user=self.request.user)",
+        "detail": "accounts.views",
+        "documentation": {}
+    },
+    {
+        "label": "\ttemplate_name",
+        "kind": 5,
+        "importPath": "accounts.views",
+        "description": "accounts.views",
+        "peekOfCode": "\ttemplate_name = \"accounts/registration/signup.html\"\n\tsuccess_url = reverse_lazy(\"accounts:login\")\nclass EditProfile(LoginRequiredMixin, UpdateView):\n    model = Profile\n    form_class = EditProfileForm\n    template_name = \"accounts/edit_profile.html\"\n    success_url = \"/\"\n    def get_object(self):\n        return Profile.objects.get(user=self.request.user)\n@login_required",
+        "detail": "accounts.views",
+        "documentation": {}
+    },
+    {
+        "label": "\tsuccess_url",
+        "kind": 5,
+        "importPath": "accounts.views",
+        "description": "accounts.views",
+        "peekOfCode": "\tsuccess_url = reverse_lazy(\"accounts:login\")\nclass EditProfile(LoginRequiredMixin, UpdateView):\n    model = Profile\n    form_class = EditProfileForm\n    template_name = \"accounts/edit_profile.html\"\n    success_url = \"/\"\n    def get_object(self):\n        return Profile.objects.get(user=self.request.user)\n@login_required\ndef settings(request):",
+        "detail": "accounts.views",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "chats.migrations.0001_initial",
+        "description": "chats.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='ChatRoom',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),",
+        "detail": "chats.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "chats.migrations.0002_chatroom_unread_messages",
+        "description": "chats.migrations.0002_chatroom_unread_messages",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('chats', '0001_initial'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='chatroom',\n            name='unread_messages',\n            field=models.PositiveIntegerField(default=0),\n        ),",
+        "detail": "chats.migrations.0002_chatroom_unread_messages",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "chats.migrations.0003_alter_chatroom_unread_messages",
+        "description": "chats.migrations.0003_alter_chatroom_unread_messages",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('chats', '0002_chatroom_unread_messages'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='chatroom',\n            name='unread_messages',\n            field=models.BooleanField(default=False),\n        ),",
+        "detail": "chats.migrations.0003_alter_chatroom_unread_messages",
+        "documentation": {}
+    },
+    {
+        "label": "ChatRoomAdmin",
+        "kind": 6,
+        "importPath": "chats.admin",
+        "description": "chats.admin",
+        "peekOfCode": "class ChatRoomAdmin(admin.ModelAdmin):\n    list_display = ['sender', 'receiver', 'timestamp', 'unread_messages']",
+        "detail": "chats.admin",
+        "documentation": {}
+    },
+    {
+        "label": "ChatsConfig",
+        "kind": 6,
+        "importPath": "chats.apps",
+        "description": "chats.apps",
+        "peekOfCode": "class ChatsConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'chats'",
+        "detail": "chats.apps",
+        "documentation": {}
+    },
+    {
+        "label": "ChatConsumer",
+        "kind": 6,
+        "importPath": "chats.consumer",
+        "description": "chats.consumer",
+        "peekOfCode": "class ChatConsumer(AsyncWebsocketConsumer):\n    async def connect(self):\n        self.receiver = self.scope['url_route']['kwargs']['username']\n        self.user = self.scope['user'].username\n        self.room_group_name = f\"chat_{'_'.join(sorted([self.user, self.receiver]))}\"\n        await self.channel_layer.group_add(\n            self.room_group_name,\n            self.channel_name\n        )\n        await self.accept()",
+        "detail": "chats.consumer",
+        "documentation": {}
+    },
+    {
+        "label": "ChatRoom",
+        "kind": 6,
+        "importPath": "chats.models",
+        "description": "chats.models",
+        "peekOfCode": "class ChatRoom(models.Model):\n    sender = models.ForeignKey(User,related_name= \"sender\", on_delete = models.CASCADE)\n    receiver = models.ForeignKey(User,related_name= \"receiver\", on_delete = models.CASCADE)\n    message = models.TextField()\n    timestamp = models.DateTimeField(auto_now_add = True)\n    unread_messages = models.BooleanField(default = False)\n    def __str__(self):\n        return f\"{self.sender.username} send to {self.receiver.username}\"",
+        "detail": "chats.models",
+        "documentation": {}
+    },
+    {
+        "label": "websocket_urlpatterns",
+        "kind": 5,
+        "importPath": "chats.routing",
+        "description": "chats.routing",
+        "peekOfCode": "websocket_urlpatterns = [\n    path('ws/chat/<username>/', ChatConsumer.as_asgi())\n]",
+        "detail": "chats.routing",
+        "documentation": {}
+    },
+    {
+        "label": "app_name",
+        "kind": 5,
+        "importPath": "chats.urls",
+        "description": "chats.urls",
+        "peekOfCode": "app_name = \"chats\"\nurlpatterns = [\n    path('', views.chat, name = \"chat\"),\n    path('chat/<str:username>/', views.chat_detail, name = \"chat_detail\"),\n]",
+        "detail": "chats.urls",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "chats.urls",
+        "description": "chats.urls",
+        "peekOfCode": "urlpatterns = [\n    path('', views.chat, name = \"chat\"),\n    path('chat/<str:username>/', views.chat_detail, name = \"chat_detail\"),\n]",
+        "detail": "chats.urls",
+        "documentation": {}
+    },
+    {
+        "label": "chat",
+        "kind": 2,
+        "importPath": "chats.views",
+        "description": "chats.views",
+        "peekOfCode": "def chat(request):\n    user = request.user\n    friends = Friend.objects.filter(Q(following=user)|Q(follower=user), is_accepted=True)\n    for friend in friends :\n        if friend.following == user:\n            friend.unread_msg = ChatRoom.objects.filter(receiver = user, sender=friend.follower, unread_messages=False).count()\n            try :\n                friend.last_message_added =  ChatRoom.objects.filter(Q(sender=friend.follower, receiver=user)|Q(sender=user, receiver=friend.follower)).latest('timestamp') \n            except ChatRoom.DoesNotExist :\n                friend.last_message_added = None",
+        "detail": "chats.views",
+        "documentation": {}
+    },
+    {
+        "label": "chat_detail",
+        "kind": 2,
+        "importPath": "chats.views",
+        "description": "chats.views",
+        "peekOfCode": "def chat_detail(request, username ):\n    user = request.user\n    friend = User.objects.get(username = username)\n    messages = ChatRoom.objects.filter(Q(sender=friend, receiver=user)|Q(sender=user, receiver=friend)).order_by(\"timestamp\")\n    message_readed = ChatRoom.objects.filter(receiver = user,sender=friend, unread_messages=False).update(unread_messages=True)\n    return render(request,\"chats/chat_detail.html\", {'friend':friend, 'messages':messages})",
+        "detail": "chats.views",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "chat_application.asgi",
+        "description": "chat_application.asgi",
+        "peekOfCode": "application = ProtocolTypeRouter( \n    {\n        'http': get_asgi_application(),\n        'websocket': AuthMiddlewareStack(\n            URLRouter(\n                routing.websocket_urlpatterns\n            )\n        )\n    }\n)",
+        "detail": "chat_application.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_DIR",
+        "kind": 5,
+        "importPath": "chat_application.settings",
+        "description": "chat_application.settings",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-p4)@%uk-rt$5$fme_uajk3k%syk=x@k@7%__i(y5@#_@45vz&a'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [",
+        "detail": "chat_application.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SECRET_KEY",
+        "kind": 5,
+        "importPath": "chat_application.settings",
+        "description": "chat_application.settings",
+        "peekOfCode": "SECRET_KEY = 'django-insecure-p4)@%uk-rt$5$fme_uajk3k%syk=x@k@7%__i(y5@#_@45vz&a'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'daphne',\n    'chats',\n    'accounts',\n    'friends',   ",
+        "detail": "chat_application.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEBUG",
+        "kind": 5,
+        "importPath": "chat_application.settings",
+        "description": "chat_application.settings",
+        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'daphne',\n    'chats',\n    'accounts',\n    'friends',   \n    'django.contrib.admin',\n    'django.contrib.auth',",
+        "detail": "chat_application.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ALLOWED_HOSTS",
+        "kind": 5,
+        "importPath": "chat_application.settings",
+        "description": "chat_application.settings",
+        "peekOfCode": "ALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'daphne',\n    'chats',\n    'accounts',\n    'friends',   \n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',",
+        "detail": "chat_application.settings",
+        "documentation": {}
+    },
+    {
+        "label": "INSTALLED_APPS",
+        "kind": 5,
+        "importPath": "chat_application.settings",
+        "description": "chat_application.settings",
+        "peekOfCode": "INSTALLED_APPS = [\n    'daphne',\n    'chats',\n    'accounts',\n    'friends',   \n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',",
+        "detail": "chat_application.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MIDDLEWARE",
+        "kind": 5,
+        "importPath": "chat_application.settings",
+        "description": "chat_application.settings",
+        "peekOfCode": "MIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',\n]\nROOT_URLCONF = 'chat_application.urls'",
+        "detail": "chat_application.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ROOT_URLCONF",
+        "kind": 5,
+        "importPath": "chat_application.settings",
+        "description": "chat_application.settings",
+        "peekOfCode": "ROOT_URLCONF = 'chat_application.urls'\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [\n            BASE_DIR / 'templates',\n        ],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [",
+        "detail": "chat_application.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TEMPLATES",
+        "kind": 5,
+        "importPath": "chat_application.settings",
+        "description": "chat_application.settings",
+        "peekOfCode": "TEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [\n            BASE_DIR / 'templates',\n        ],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',",
+        "detail": "chat_application.settings",
+        "documentation": {}
+    },
+    {
+        "label": "WSGI_APPLICATION",
+        "kind": 5,
+        "importPath": "chat_application.settings",
+        "description": "chat_application.settings",
+        "peekOfCode": "WSGI_APPLICATION = 'chat_application.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/4.2/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.postgresql',\n        'NAME': 'django_db',  # Replace with the database name you used\n        'USER': 'django_user',  # Replace with the user you used\n        'PASSWORD': 'securepassword123',  # Replace with the password you used\n        'HOST': 'localhost',  # Or 'host.docker.internal' if Docker is on Windows/Mac",
+        "detail": "chat_application.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASES",
+        "kind": 5,
+        "importPath": "chat_application.settings",
+        "description": "chat_application.settings",
+        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.postgresql',\n        'NAME': 'django_db',  # Replace with the database name you used\n        'USER': 'django_user',  # Replace with the user you used\n        'PASSWORD': 'securepassword123',  # Replace with the password you used\n        'HOST': 'localhost',  # Or 'host.docker.internal' if Docker is on Windows/Mac\n        'PORT': '5432',\n    }\n}",
+        "detail": "chat_application.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AUTH_PASSWORD_VALIDATORS",
+        "kind": 5,
+        "importPath": "chat_application.settings",
+        "description": "chat_application.settings",
+        "peekOfCode": "AUTH_PASSWORD_VALIDATORS = [\n    {\n        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',\n    },",
+        "detail": "chat_application.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LANGUAGE_CODE",
+        "kind": 5,
+        "importPath": "chat_application.settings",
+        "description": "chat_application.settings",
+        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = 'static/'\nSTATICFILES_DIRS = [\n    BASE_DIR/'static',\n    \"/var/www/static/\",",
+        "detail": "chat_application.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TIME_ZONE",
+        "kind": 5,
+        "importPath": "chat_application.settings",
+        "description": "chat_application.settings",
+        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = 'static/'\nSTATICFILES_DIRS = [\n    BASE_DIR/'static',\n    \"/var/www/static/\",\n]",
+        "detail": "chat_application.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_I18N",
+        "kind": 5,
+        "importPath": "chat_application.settings",
+        "description": "chat_application.settings",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = 'static/'\nSTATICFILES_DIRS = [\n    BASE_DIR/'static',\n    \"/var/www/static/\",\n]\nMEDIA_URL = '/media/'",
+        "detail": "chat_application.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_TZ",
+        "kind": 5,
+        "importPath": "chat_application.settings",
+        "description": "chat_application.settings",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = 'static/'\nSTATICFILES_DIRS = [\n    BASE_DIR/'static',\n    \"/var/www/static/\",\n]\nMEDIA_URL = '/media/'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')",
+        "detail": "chat_application.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_URL",
+        "kind": 5,
+        "importPath": "chat_application.settings",
+        "description": "chat_application.settings",
+        "peekOfCode": "STATIC_URL = 'static/'\nSTATICFILES_DIRS = [\n    BASE_DIR/'static',\n    \"/var/www/static/\",\n]\nMEDIA_URL = '/media/'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "chat_application.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATICFILES_DIRS",
+        "kind": 5,
+        "importPath": "chat_application.settings",
+        "description": "chat_application.settings",
+        "peekOfCode": "STATICFILES_DIRS = [\n    BASE_DIR/'static',\n    \"/var/www/static/\",\n]\nMEDIA_URL = '/media/'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nLOGIN_REDIRECT_URL = \"/\"",
+        "detail": "chat_application.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MEDIA_URL",
+        "kind": 5,
+        "importPath": "chat_application.settings",
+        "description": "chat_application.settings",
+        "peekOfCode": "MEDIA_URL = '/media/'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nLOGIN_REDIRECT_URL = \"/\"\nLOGOUT_REDIRECT_URL = \"accounts:login\"\nLOGIN_URL = \"accounts:login\"\nASGI_APPLICATION = 'chat_application.asgi.application'",
+        "detail": "chat_application.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MEDIA_ROOT",
+        "kind": 5,
+        "importPath": "chat_application.settings",
+        "description": "chat_application.settings",
+        "peekOfCode": "MEDIA_ROOT = os.path.join(BASE_DIR, 'media')\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nLOGIN_REDIRECT_URL = \"/\"\nLOGOUT_REDIRECT_URL = \"accounts:login\"\nLOGIN_URL = \"accounts:login\"\nASGI_APPLICATION = 'chat_application.asgi.application'",
+        "detail": "chat_application.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_AUTO_FIELD",
+        "kind": 5,
+        "importPath": "chat_application.settings",
+        "description": "chat_application.settings",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nLOGIN_REDIRECT_URL = \"/\"\nLOGOUT_REDIRECT_URL = \"accounts:login\"\nLOGIN_URL = \"accounts:login\"\nASGI_APPLICATION = 'chat_application.asgi.application'\nCHANNEL_LAYERS = {\n    \"default\": {\n        \"BACKEND\": \"channels.layers.InMemoryChannelLayer\"\n    }\n}",
+        "detail": "chat_application.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LOGIN_REDIRECT_URL",
+        "kind": 5,
+        "importPath": "chat_application.settings",
+        "description": "chat_application.settings",
+        "peekOfCode": "LOGIN_REDIRECT_URL = \"/\"\nLOGOUT_REDIRECT_URL = \"accounts:login\"\nLOGIN_URL = \"accounts:login\"\nASGI_APPLICATION = 'chat_application.asgi.application'\nCHANNEL_LAYERS = {\n    \"default\": {\n        \"BACKEND\": \"channels.layers.InMemoryChannelLayer\"\n    }\n}\nEMAIL_BACKEND = \"django.core.mail.backends.smtp.EmailBackend\"",
+        "detail": "chat_application.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LOGOUT_REDIRECT_URL",
+        "kind": 5,
+        "importPath": "chat_application.settings",
+        "description": "chat_application.settings",
+        "peekOfCode": "LOGOUT_REDIRECT_URL = \"accounts:login\"\nLOGIN_URL = \"accounts:login\"\nASGI_APPLICATION = 'chat_application.asgi.application'\nCHANNEL_LAYERS = {\n    \"default\": {\n        \"BACKEND\": \"channels.layers.InMemoryChannelLayer\"\n    }\n}\nEMAIL_BACKEND = \"django.core.mail.backends.smtp.EmailBackend\"\nEMAIL_HOST = \"smtp.gmail.com\"",
+        "detail": "chat_application.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LOGIN_URL",
+        "kind": 5,
+        "importPath": "chat_application.settings",
+        "description": "chat_application.settings",
+        "peekOfCode": "LOGIN_URL = \"accounts:login\"\nASGI_APPLICATION = 'chat_application.asgi.application'\nCHANNEL_LAYERS = {\n    \"default\": {\n        \"BACKEND\": \"channels.layers.InMemoryChannelLayer\"\n    }\n}\nEMAIL_BACKEND = \"django.core.mail.backends.smtp.EmailBackend\"\nEMAIL_HOST = \"smtp.gmail.com\"\nEMAIL_USE_TLS = False # make it True ",
+        "detail": "chat_application.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ASGI_APPLICATION",
+        "kind": 5,
+        "importPath": "chat_application.settings",
+        "description": "chat_application.settings",
+        "peekOfCode": "ASGI_APPLICATION = 'chat_application.asgi.application'\nCHANNEL_LAYERS = {\n    \"default\": {\n        \"BACKEND\": \"channels.layers.InMemoryChannelLayer\"\n    }\n}\nEMAIL_BACKEND = \"django.core.mail.backends.smtp.EmailBackend\"\nEMAIL_HOST = \"smtp.gmail.com\"\nEMAIL_USE_TLS = False # make it True \nEMAIL_PORT = \"587\"",
+        "detail": "chat_application.settings",
+        "documentation": {}
+    },
+    {
+        "label": "CHANNEL_LAYERS",
+        "kind": 5,
+        "importPath": "chat_application.settings",
+        "description": "chat_application.settings",
+        "peekOfCode": "CHANNEL_LAYERS = {\n    \"default\": {\n        \"BACKEND\": \"channels.layers.InMemoryChannelLayer\"\n    }\n}\nEMAIL_BACKEND = \"django.core.mail.backends.smtp.EmailBackend\"\nEMAIL_HOST = \"smtp.gmail.com\"\nEMAIL_USE_TLS = False # make it True \nEMAIL_PORT = \"587\"\nEMAIL_HOST_USER = \"YourEmail@gmail.com\"",
+        "detail": "chat_application.settings",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_BACKEND",
+        "kind": 5,
+        "importPath": "chat_application.settings",
+        "description": "chat_application.settings",
+        "peekOfCode": "EMAIL_BACKEND = \"django.core.mail.backends.smtp.EmailBackend\"\nEMAIL_HOST = \"smtp.gmail.com\"\nEMAIL_USE_TLS = False # make it True \nEMAIL_PORT = \"587\"\nEMAIL_HOST_USER = \"YourEmail@gmail.com\"\nEMAIL_HOST_PASSWORD = \"YourPassword\"",
+        "detail": "chat_application.settings",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_HOST",
+        "kind": 5,
+        "importPath": "chat_application.settings",
+        "description": "chat_application.settings",
+        "peekOfCode": "EMAIL_HOST = \"smtp.gmail.com\"\nEMAIL_USE_TLS = False # make it True \nEMAIL_PORT = \"587\"\nEMAIL_HOST_USER = \"YourEmail@gmail.com\"\nEMAIL_HOST_PASSWORD = \"YourPassword\"",
+        "detail": "chat_application.settings",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_USE_TLS",
+        "kind": 5,
+        "importPath": "chat_application.settings",
+        "description": "chat_application.settings",
+        "peekOfCode": "EMAIL_USE_TLS = False # make it True \nEMAIL_PORT = \"587\"\nEMAIL_HOST_USER = \"YourEmail@gmail.com\"\nEMAIL_HOST_PASSWORD = \"YourPassword\"",
+        "detail": "chat_application.settings",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_PORT",
+        "kind": 5,
+        "importPath": "chat_application.settings",
+        "description": "chat_application.settings",
+        "peekOfCode": "EMAIL_PORT = \"587\"\nEMAIL_HOST_USER = \"YourEmail@gmail.com\"\nEMAIL_HOST_PASSWORD = \"YourPassword\"",
+        "detail": "chat_application.settings",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_HOST_USER",
+        "kind": 5,
+        "importPath": "chat_application.settings",
+        "description": "chat_application.settings",
+        "peekOfCode": "EMAIL_HOST_USER = \"YourEmail@gmail.com\"\nEMAIL_HOST_PASSWORD = \"YourPassword\"",
+        "detail": "chat_application.settings",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_HOST_PASSWORD",
+        "kind": 5,
+        "importPath": "chat_application.settings",
+        "description": "chat_application.settings",
+        "peekOfCode": "EMAIL_HOST_PASSWORD = \"YourPassword\"",
+        "detail": "chat_application.settings",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "chat_application.urls",
+        "description": "chat_application.urls",
+        "peekOfCode": "urlpatterns = [   \n    path('', include('accounts.urls' , namespace= 'accounts')),\n    path('', include('chats.urls' , namespace= 'chats')),\n    path('', include('friends.urls' , namespace= 'friends')),\n    path('admin/', admin.site.urls),   \n]\nurlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)\nurlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)",
+        "detail": "chat_application.urls",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "chat_application.wsgi",
+        "description": "chat_application.wsgi",
+        "peekOfCode": "application = get_wsgi_application()",
+        "detail": "chat_application.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "friends.migrations.0001_initial",
+        "description": "friends.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Friend',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),",
+        "detail": "friends.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "friends.migrations.0002_alter_friend_following",
+        "description": "friends.migrations.0002_alter_friend_following",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n        ('friends', '0001_initial'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='friend',\n            name='following',\n            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='following', to=settings.AUTH_USER_MODEL),",
+        "detail": "friends.migrations.0002_alter_friend_following",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "friends.migrations.0003_friend_slug",
+        "description": "friends.migrations.0003_friend_slug",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('friends', '0002_alter_friend_following'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='friend',\n            name='slug',\n            field=models.SlugField(null=True),\n        ),",
+        "detail": "friends.migrations.0003_friend_slug",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "friends.migrations.0004_remove_friend_follower_remove_friend_following_and_more",
+        "description": "friends.migrations.0004_remove_friend_follower_remove_friend_following_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n        ('friends', '0003_friend_slug'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='friend',\n            name='follower',\n        ),",
+        "detail": "friends.migrations.0004_remove_friend_follower_remove_friend_following_and_more",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "friends.migrations.0005_remove_friend_friend_remove_friend_user_and_more",
+        "description": "friends.migrations.0005_remove_friend_friend_remove_friend_user_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n        ('friends', '0004_remove_friend_follower_remove_friend_following_and_more'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='friend',\n            name='friend',\n        ),",
+        "detail": "friends.migrations.0005_remove_friend_friend_remove_friend_user_and_more",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "friends.migrations.0006_remove_friend_slug",
+        "description": "friends.migrations.0006_remove_friend_slug",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('friends', '0005_remove_friend_friend_remove_friend_user_and_more'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='friend',\n            name='slug',\n        ),\n    ]",
+        "detail": "friends.migrations.0006_remove_friend_slug",
+        "documentation": {}
+    },
+    {
+        "label": "FriendAdmin",
+        "kind": 6,
+        "importPath": "friends.admin",
+        "description": "friends.admin",
+        "peekOfCode": "class FriendAdmin(admin.ModelAdmin):\n    list_display = ['follower', 'following','is_accepted',  'created_at']",
+        "detail": "friends.admin",
+        "documentation": {}
+    },
+    {
+        "label": "FriendsConfig",
+        "kind": 6,
+        "importPath": "friends.apps",
+        "description": "friends.apps",
+        "peekOfCode": "class FriendsConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'friends'",
+        "detail": "friends.apps",
+        "documentation": {}
+    },
+    {
+        "label": "notifications_length",
+        "kind": 2,
+        "importPath": "friends.context_processors",
+        "description": "friends.context_processors",
+        "peekOfCode": "def notifications_length(request):\n    user = request.user\n    if user.is_authenticated:\n        notifications_count = Friend.objects.filter(following=user, is_accepted=False).count()\n    else:\n        notifications_count = 0\n    return {\n        'notifications_length': notifications_count,\n    }\n# Meassages",
+        "detail": "friends.context_processors",
+        "documentation": {}
+    },
+    {
+        "label": "messages_length",
+        "kind": 2,
+        "importPath": "friends.context_processors",
+        "description": "friends.context_processors",
+        "peekOfCode": "def messages_length(request):\n    user = request.user\n    if user.is_authenticated:\n        messages_count = ChatRoom.objects.filter(receiver = user , unread_messages=False).count()\n    else:\n        messages_count = 0\n    return {'messages_length':messages_count}",
+        "detail": "friends.context_processors",
+        "documentation": {}
+    },
+    {
+        "label": "Friend",
+        "kind": 6,
+        "importPath": "friends.models",
+        "description": "friends.models",
+        "peekOfCode": "class Friend(models.Model):\n    follower = models.ForeignKey(User,related_name= \"follower\", on_delete = models.CASCADE)\n    following = models.ForeignKey(User,related_name= \"following\" ,on_delete = models.CASCADE)\n    is_accepted =  models.BooleanField(default = False)\n    created_at = models.DateTimeField(auto_now_add = True)\n    def __str__(self):\n        return f\"{self.follower} following {self.following}\"",
+        "detail": "friends.models",
+        "documentation": {}
+    },
+    {
+        "label": "app_name",
+        "kind": 5,
+        "importPath": "friends.urls",
+        "description": "friends.urls",
+        "peekOfCode": "app_name = \"friends\"\nurlpatterns = [\n    path('search/', views.search_friend, name = \"search\"),\n    path('notification/', views.notification, name = \"notification\"),\n    path('follow/<str:username>/', views.follow, name = \"follow\"),\n    path('unfollow/<str:username>/', views.unfollow, name = \"unfollow\"),\n    path('accept_follower/<str:username>/', views.accept_follower, name = \"accept_follower\"),\n    path('remove_follower/<str:username>/', views.remove_follower, name = \"remove_follower\"),\n]",
+        "detail": "friends.urls",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "friends.urls",
+        "description": "friends.urls",
+        "peekOfCode": "urlpatterns = [\n    path('search/', views.search_friend, name = \"search\"),\n    path('notification/', views.notification, name = \"notification\"),\n    path('follow/<str:username>/', views.follow, name = \"follow\"),\n    path('unfollow/<str:username>/', views.unfollow, name = \"unfollow\"),\n    path('accept_follower/<str:username>/', views.accept_follower, name = \"accept_follower\"),\n    path('remove_follower/<str:username>/', views.remove_follower, name = \"remove_follower\"),\n]",
+        "detail": "friends.urls",
+        "documentation": {}
+    },
+    {
+        "label": "notification",
+        "kind": 2,
+        "importPath": "friends.views",
+        "description": "friends.views",
+        "peekOfCode": "def notification(request):\n    user = request.user\n    followers = Friend.objects.filter(following=user, is_accepted=False).order_by('-created_at')\n    return render(request, \"friends/notification.html\", {'followers': followers})\n@login_required    \ndef search_friend(request):\n    friends = Profile.objects.all().exclude(user = request.user)\n    accepted_friends = Friend.objects.all()\n    accepted_friend_ids = set()\n    for relationship in accepted_friends:",
+        "detail": "friends.views",
+        "documentation": {}
+    },
+    {
+        "label": "search_friend",
+        "kind": 2,
+        "importPath": "friends.views",
+        "description": "friends.views",
+        "peekOfCode": "def search_friend(request):\n    friends = Profile.objects.all().exclude(user = request.user)\n    accepted_friends = Friend.objects.all()\n    accepted_friend_ids = set()\n    for relationship in accepted_friends:\n        if relationship.follower == request.user and not relationship.is_accepted:\n            accepted_friend_ids.add(relationship.following.id)\n        if relationship.is_accepted and (relationship.follower == request.user or relationship.following == request.user ):\n            accepted_friend_ids.add(relationship.follower.id)\n            accepted_friend_ids.add(relationship.following.id)",
+        "detail": "friends.views",
+        "documentation": {}
+    },
+    {
+        "label": "follow",
+        "kind": 2,
+        "importPath": "friends.views",
+        "description": "friends.views",
+        "peekOfCode": "def follow(request,username):\n    follower = request.user\n    following = User.objects.get(username=username)\n    friend,created = Friend.objects.get_or_create(follower=follower, following=following)\n    friend.save()\n    return redirect(\"friends:search\")\ndef unfollow(request,username):\n    user = request.user\n    friend = User.objects.get(username = username)\n    unfollow_friend = Friend.objects.filter(Q(follower=friend,following=user )|Q(follower=user,following=friend ))",
+        "detail": "friends.views",
+        "documentation": {}
+    },
+    {
+        "label": "unfollow",
+        "kind": 2,
+        "importPath": "friends.views",
+        "description": "friends.views",
+        "peekOfCode": "def unfollow(request,username):\n    user = request.user\n    friend = User.objects.get(username = username)\n    unfollow_friend = Friend.objects.filter(Q(follower=friend,following=user )|Q(follower=user,following=friend ))\n    unfollow_friend.delete()\n    messages = ChatRoom.objects.filter(Q(sender=friend, receiver=user)|Q(sender=user, receiver=friend))\n    messages.delete()\n    return redirect(\"friends:search\")\ndef accept_follower(request,username):\n    user = request.user",
+        "detail": "friends.views",
+        "documentation": {}
+    },
+    {
+        "label": "accept_follower",
+        "kind": 2,
+        "importPath": "friends.views",
+        "description": "friends.views",
+        "peekOfCode": "def accept_follower(request,username):\n    user = request.user\n    accepted_follower = Friend.objects.filter(follower__username=username, following=user).update(is_accepted=True)\n    return redirect(\"friends:notification\")\ndef remove_follower(request, username):\n    user = request.user\n    removed_follower = Friend.objects.filter(follower__username=username, following=user)\n    removed_follower.delete()\n    return redirect(\"friends:notification\")",
+        "detail": "friends.views",
+        "documentation": {}
+    },
+    {
+        "label": "remove_follower",
+        "kind": 2,
+        "importPath": "friends.views",
+        "description": "friends.views",
+        "peekOfCode": "def remove_follower(request, username):\n    user = request.user\n    removed_follower = Friend.objects.filter(follower__username=username, following=user)\n    removed_follower.delete()\n    return redirect(\"friends:notification\")",
+        "detail": "friends.views",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "manage",
+        "description": "manage",
+        "peekOfCode": "def main():\n    \"\"\"Run administrative tasks.\"\"\"\n    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'chat_application.settings')\n    try:\n        from django.core.management import execute_from_command_line\n    except ImportError as exc:\n        raise ImportError(\n            \"Couldn't import Django. Are you sure it's installed and \"\n            \"available on your PYTHONPATH environment variable? Did you \"\n            \"forget to activate a virtual environment?\"",
+        "detail": "manage",
+        "documentation": {}
+    }
+]
