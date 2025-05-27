@@ -343,7 +343,7 @@
     <a href="{% url 'chats:chat' %}" class="back-link">← Назад к чатам</a>
     
     <div class="group-chat-container">
-        <!-- Заголовок группы -->
+
         <div class="group-header">
             <div>
                 <h2>{{ group.name }}</h2>
@@ -354,8 +354,7 @@
                 ℹ️ Инфо о группе
             </a>
         </div>
-        
-        <!-- Сообщения -->
+
         <div class="messages-container" id="messages-container">
             {% if messages %}
                 {% for message in messages %}
@@ -451,20 +450,20 @@
     </div>
 </div>
 
-<!-- Модальное окно для изображений -->
+
 <div id="imageModal" class="image-modal">
     <span class="close-modal" onclick="closeImageModal()">&times;</span>
     <img id="modalImage" class="modal-content">
 </div>
 
 <script>
-// Автоскролл к последнему сообщению
+
 document.addEventListener('DOMContentLoaded', function() {
     const messagesContainer = document.getElementById('messages-container');
     messagesContainer.scrollTop = messagesContainer.scrollHeight;
 });
 
-// Отправка формы по Enter
+
 document.getElementById('message-input').addEventListener('keypress', function(e) {
     if (e.key === 'Enter') {
         e.preventDefault();
@@ -472,7 +471,7 @@ document.getElementById('message-input').addEventListener('keypress', function(e
     }
 });
 
-// Обработка загрузки файлов
+
 const fileInput = document.getElementById('file-input');
 const messageInput = document.getElementById('message-input');
 
@@ -483,7 +482,7 @@ fileInput.addEventListener('change', function(e) {
         formData.append('file', file);
         formData.append('message', messageInput.value.trim());
         
-        // Замените этот URL на правильный для вашего группового чата
+
         fetch("{% url 'chats:upload_file_group' group.id %}", {
             method: 'POST',
             body: formData,
@@ -494,7 +493,7 @@ fileInput.addEventListener('change', function(e) {
         .then(response => response.json())
         .then(data => {
             if (data.success) {
-                // Перезагружаем страницу или добавляем сообщение динамически
+              
                 location.reload();
             } else {
                 alert('Ошибка загрузки файла: ' + (data.error || 'Неизвестная ошибка'));
@@ -505,13 +504,13 @@ fileInput.addEventListener('change', function(e) {
             alert('Произошла ошибка при загрузке файла');
         });
         
-        // Очищаем поля
+        
         fileInput.value = '';
         messageInput.value = '';
     }
 });
 
-// Функции для модального окна
+
 function openImageModal(imageSrc) {
     const modal = document.getElementById('imageModal');
     const modalImg = document.getElementById('modalImage');
@@ -524,14 +523,13 @@ function closeImageModal() {
     modal.classList.remove('active');
 }
 
-// Закрытие модального окна по клику вне изображения
+
 document.getElementById('imageModal').addEventListener('click', function(e) {
     if (e.target === this) {
         closeImageModal();
     }
 });
 
-// Функция для получения CSRF токена
 function getCookie(name) {
     let cookieValue = null;
     if (document.cookie && document.cookie !== '') {

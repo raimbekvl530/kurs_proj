@@ -25,8 +25,7 @@ class GroupForm(forms.ModelForm):
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        # Можно ограничить выбор только друзьями текущего пользователя
-        # Это будет настроено в view
+
 
 class GroupEditForm(forms.ModelForm):
     """Форма для редактирования основной информации группы"""
@@ -77,7 +76,6 @@ class AddMemberForm(forms.Form):
         super().__init__(*args, **kwargs)
         
         if current_user and group:
-            # Получаем друзей пользователя, которые не состоят в группе
             from friends.models import Friend
             from django.db.models import Q
             
@@ -93,7 +91,6 @@ class AddMemberForm(forms.Form):
                 else:
                     friend_users.append(friend.following)
             
-            # Исключаем уже состоящих в группе
             available_users = User.objects.filter(
                 id__in=[f.id for f in friend_users]
             ).exclude(

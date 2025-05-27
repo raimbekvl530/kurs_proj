@@ -1,7 +1,7 @@
 import os
 import requests
 
-NEUROSPACE_API_KEY = os.environ.get("OPENAI_API_KEY")  # берём из env
+NEUROSPACE_API_KEY = os.environ.get("OPENAI_API_KEY")  ,#ENV 
 
 def ask_chatgpt(user_message):
     url = "https://api.neurospace.pro/v1/chat/completions"

@@ -7,7 +7,7 @@
 {% block content %}
 <form method="GET">
     <div class="search">
-        <input type="text" name="q" placeholder="Search contacts...">
+        <input type="text" name="q" placeholder="Найти контакты...">
     </div>
 </form>
 <div class="contacts">
@@ -21,10 +21,10 @@
                     <p class="name">{{ friend.user.username }}</p>
                 </div>
                 {% if friend.user.id in accepted_friends %}
-                    <a href="{% url 'friends:unfollow' friend.user.username %}"><button class="unfollow-button">following</button></a>
+                    <a href="{% url 'friends:unfollow' friend.user.username %}"><button class="unfollow-button">Добавить</button></a>
                 {% else %}
 				
-                    <a href="{% url 'friends:follow' friend.user.username %}"><button class="follow-button">follow</button></a>
+                    <a href="{% url 'friends:follow' friend.user.username %}"><button class="follow-button">Удалить</button></a>
 			
                 {% endif %}
             </div>

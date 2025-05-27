@@ -1,7 +1,7 @@
 from .models import Friend
 from chats.models import ChatRoom
 
-# Notifications
+
 def notifications_length(request):
     user = request.user
     if user.is_authenticated:
@@ -15,7 +15,6 @@ def notifications_length(request):
         'notifications_length': notifications_count,
     }
 
-# Meassages
 def messages_length(request):
     user = request.user
     if user.is_authenticated:

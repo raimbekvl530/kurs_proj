@@ -22,7 +22,7 @@
         
         <div class="discord-body">
             <div class="discord-sidebar">
-                <!-- Группы -->
+
                 {% if groups %}
                 <div class="discord-section">
                     <h6 class="discord-section-title">
@@ -30,7 +30,7 @@
                     </h6>
                     {% for group in groups %}
                     <div class="discord-chat-item">
-                        <!-- ИСПРАВЛЕНО: Добавлена поддержка фото групп -->
+
                         {% if group.photo %}
                             <img src="{{ group.photo.url }}" alt="{{ group.name }}" class="discord-avatar discord-avatar-img">
                         {% else %}
@@ -62,14 +62,14 @@
                 </div>
                 {% endif %}
 
-                <!-- Личные чаты - ИСПРАВЛЕННАЯ ВЕРСИЯ -->
+
                 <div class="discord-section">
                     <h6 class="discord-section-title">
                         <i class="fas fa-comment me-2"></i>Личные чаты
                     </h6>
                     {% for friend in friends %}
                     <div class="discord-chat-item">
-                        <!-- ИСПРАВЛЕНО: Добавлена поддержка аватарок пользователей -->
+        
                         {% if friend.chat_partner.profile.thumbnail %}
                             <img src="{{ friend.chat_partner.profile.thumbnail.url }}" alt="{{ friend.chat_partner.username }}" class="discord-avatar discord-avatar-img">
                             {% if friend.chat_partner.profile.get_online_status %}
@@ -113,7 +113,7 @@
                 </div>
             </div>
 
-            <!-- Правая панель - приветствие -->
+
             <div class="discord-welcome">
                 <div class="discord-welcome-content">
                     <i class="fas fa-comments discord-welcome-icon"></i>
@@ -309,7 +309,7 @@ body {
     background: var(--discord-accent);
 }
 
-/* Индикатор онлайн статуса */
+
 .discord-online-status {
     position: absolute;
     bottom: -2px;

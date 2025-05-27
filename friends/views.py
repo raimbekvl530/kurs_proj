@@ -6,7 +6,7 @@ from chats.models import ChatRoom
 
 from accounts.models import Profile
 from django.db.models import Q
-# Create your views here.
+
 # '''
 @login_required
 def notification(request):

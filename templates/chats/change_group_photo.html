@@ -282,7 +282,7 @@
     </div>
 </div>
 
-<!-- Предварительный просмотр -->
+
 <script>
 document.querySelector('input[type="file"]').addEventListener('change', function(e) {
     const file = e.target.files[0];
@@ -293,14 +293,12 @@ document.querySelector('input[type="file"]').addEventListener('change', function
             preview.innerHTML = `<img src="${e.target.result}" alt="Preview">`;
         };
         reader.readAsDataURL(file);
-        
-        // Обновляем текст кнопки
+
         document.querySelector('.file-input-button').textContent = `📁 ${file.name}`;
     }
 });
 </script>
 
-<!-- Сообщения -->
 {% if messages %}
     <div style="position: fixed; top: 20px; right: 20px; z-index: 1000;">
         {% for message in messages %}

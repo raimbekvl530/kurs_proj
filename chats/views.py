@@ -14,32 +14,30 @@ import json
 @login_required
 def chat(request):
     user = request.user
-    
-    # ИСПРАВЛЕНО: Подтягиваем связанные профили для аватарок
+
     friends = Friend.objects.filter(
         Q(following=user) | Q(follower=user), 
         is_accepted=True
     ).select_related('following__profile', 'follower__profile')
     
-    # Получаем группы пользователя с фото
+
     groups = Group.objects.filter(members=user).order_by('-created_at')
 
-    # ИСПРАВЛЕННАЯ ЛОГИКА для друзей
+
     for friend in friends:
-        # Определяем кто собеседник
+
         if friend.following == user:
             friend.chat_partner = friend.follower
         else:
             friend.chat_partner = friend.following
-        
-        # Считаем непрочитанные сообщения
+
         friend.unread_msg = ChatRoom.objects.filter(
             receiver=user, 
             sender=friend.chat_partner, 
             unread_messages=False
         ).count()
         
-        # Получаем последнее сообщение между пользователями
+
         try:
             friend.last_message_added = ChatRoom.objects.filter(
                 Q(sender=friend.chat_partner, receiver=user) | Q(sender=user, receiver=friend.chat_partner)
@@ -47,14 +45,14 @@ def chat(request):
         except ChatRoom.DoesNotExist:
             friend.last_message_added = None
 
-    # Добавляем информацию о последних сообщениях в группах
+
     for group in groups:
         try:
             group.last_message = GroupMessage.objects.filter(group=group).latest('timestamp')
         except GroupMessage.DoesNotExist:
             group.last_message = None
         
-        # Подсчет участников
+
         group.members_count = group.members.count()
 
     return render(request, "chats/chat.html", {
@@ -67,7 +65,6 @@ def chat_detail(request, username):
     user = request.user
     friend = get_object_or_404(User, username=username)
 
-    # Проверяем что пользователи действительно друзья
     friendship = Friend.objects.filter(
         Q(following=user, follower=friend) | Q(following=friend, follower=user),
         is_accepted=True
@@ -106,11 +103,9 @@ def upload_file_chat(request, username):
         message_text = request.POST.get('message', '').strip()
         
         if file:
-            # Проверяем размер файла (например, не больше 10MB)
             if file.size > 10 * 1024 * 1024:
                 return JsonResponse({'error': 'Файл слишком большой (максимум 10MB)'}, status=400)
             
-            # Создаем сообщение с файлом
             chat_message = ChatRoom.objects.create(
                 sender=request.user,
                 receiver=friend,
@@ -134,14 +129,12 @@ def upload_file_chat(request, username):
 def group_chat(request, group_id):
     group = get_object_or_404(Group, id=group_id)
     
-    # Проверяем, что пользователь в группе
     if not group.members.filter(id=request.user.id).exists():
         messages.error(request, "У вас нет доступа к этой группе")
         return redirect('chats:chat')
     
     messages_list = GroupMessage.objects.filter(group=group).order_by('timestamp')
-    
-    # Если отправляем текстовое сообщение
+
     if request.method == 'POST' and 'message' in request.POST:
         message_text = request.POST.get('message', '').strip()
         if message_text:
@@ -172,11 +165,11 @@ def upload_file_group(request, group_id):
         message_text = request.POST.get('message', '').strip()
         
         if file:
-            # Проверяем размер файла (например, не больше 10MB)
+            # Проверяем размер файла 
             if file.size > 10 * 1024 * 1024:
                 return JsonResponse({'error': 'Файл слишком большой (максимум 10MB)'}, status=400)
             
-            # Создаем сообщение с файлом
+
             group_message = GroupMessage.objects.create(
                 group=group,
                 sender=request.user,
@@ -197,7 +190,7 @@ def upload_file_group(request, group_id):
     
     return JsonResponse({'error': 'Метод не поддерживается'}, status=405)
 
-# Остальные функции остаются без изменений
+
 @login_required
 def chat_with_gpt(request):
     response_text = ""
@@ -218,12 +211,12 @@ def create_group(request):
             group.admin = request.user
             group.save()
             form.save_m2m()
-            group.members.add(request.user)  # Добавляем создателя в участники
+            group.members.add(request.user)  
             messages.success(request, f'Группа "{group.name}" успешно создана!')
             return redirect('chats:group_detail', group_id=group.id)
     else:
         form = GroupForm()
-        # Получаем только друзей для добавления в группу
+
         user_friends = Friend.objects.filter(
             Q(following=request.user) | Q(follower=request.user), 
             is_accepted=True
@@ -244,12 +237,11 @@ def create_group(request):
 def group_detail(request, group_id):
     group = get_object_or_404(Group, id=group_id)
     
-    # Проверяем доступ к группе
     if not group.members.filter(id=request.user.id).exists():
         messages.error(request, "У вас нет доступа к этой группе")
         return redirect('chats:chat')
     
-    # Получаем последние сообщения
+
     recent_messages = GroupMessage.objects.filter(group=group).order_by('-timestamp')[:10]
     
     return render(request, "chats/group_detail.html", {
@@ -262,17 +254,17 @@ def group_detail(request, group_id):
 def leave_group(request, group_id):
     group = get_object_or_404(Group, id=group_id)
     
-    # Проверяем, что пользователь в группе  
+
     if not group.members.filter(id=request.user.id).exists():
         messages.error(request, "Вы не состоите в этой группе")
         return redirect('chats:chat')
     
-    # Админ не может покинуть свою группу
+
     if group.admin == request.user:
         messages.error(request, "Вы не можете покинуть группу, так как являетесь её администратором")
         return redirect('chats:group_detail', group_id=group.id)
     
-    # Удаляем пользователя из группы
+
     group.members.remove(request.user)
     messages.success(request, f"Вы покинули группу '{group.name}'")
     
@@ -283,7 +275,7 @@ def add_member_to_group(request, group_id):
     """Добавление участника в группу (только админ)"""
     group = get_object_or_404(Group, id=group_id)
     
-    # Только админ может добавлять участников
+
     if group.admin != request.user:
         messages.error(request, "Только администратор может добавлять участников")
         return redirect('chats:group_detail', group_id=group.id)
@@ -303,10 +295,9 @@ def add_member_to_group(request, group_id):
 
 @login_required
 def edit_group(request, group_id):
-    """Редактирование информации о группе (только админ)"""
     group = get_object_or_404(Group, id=group_id)
     
-    # Только админ может редактировать группу
+
     if group.admin != request.user:
         messages.error(request, "Только администратор может редактировать группу")
         return redirect('chats:group_detail', group_id=group.id)
@@ -327,10 +318,9 @@ def edit_group(request, group_id):
 
 @login_required
 def change_group_photo(request, group_id):
-    """Изменение фото группы (только админ)"""
+
     group = get_object_or_404(Group, id=group_id)
-    
-    # Только админ может менять фото
+
     if group.admin != request.user:
         messages.error(request, "Только администратор может изменять фото группы")
         return redirect('chats:group_detail', group_id=group.id)
@@ -351,10 +341,9 @@ def change_group_photo(request, group_id):
 
 @login_required
 def remove_group_photo(request, group_id):
-    """Удаление фото группы (только админ)"""
     group = get_object_or_404(Group, id=group_id)
     
-    # Только админ может удалять фото
+
     if group.admin != request.user:
         messages.error(request, "Только администратор может удалять фото группы")
         return redirect('chats:group_detail', group_id=group.id)
@@ -369,21 +358,20 @@ def remove_group_photo(request, group_id):
 
 @login_required
 def manage_members(request, group_id):
-    """Управление участниками группы (только админ)"""
     group = get_object_or_404(Group, id=group_id)
     
-    # Только админ может управлять участниками
+
     if group.admin != request.user:
         messages.error(request, "Только администратор может управлять участниками")
         return redirect('chats:group_detail', group_id=group.id)
     
-    # ИСПРАВЛЕНО: Получаем всех друзей, которые НЕ состоят в группе
+
     user_friends = Friend.objects.filter(
         Q(following=request.user) | Q(follower=request.user), 
         is_accepted=True
     )
     
-    # Получаем список ID всех друзей
+
     friend_ids = []
     for friend in user_friends:
         if friend.following == request.user:
@@ -391,17 +379,17 @@ def manage_members(request, group_id):
         else:
             friend_ids.append(friend.following.id)
     
-    # Исключаем уже состоящих в группе
+
     current_member_ids = list(group.members.values_list('id', flat=True))
     available_friend_ids = [fid for fid in friend_ids if fid not in current_member_ids]
     
-    # Создаем форму с доступными пользователями
+
     if request.method == 'POST' and 'add_member' in request.POST:
         member_id = request.POST.get('member')
         if member_id:
             try:
                 member = User.objects.get(id=member_id)
-                # Проверяем что пользователь в списке доступных
+
                 if int(member_id) in available_friend_ids:
                     group.members.add(member)
                     messages.success(request, f"Пользователь {member.username} добавлен в группу")
@@ -412,7 +400,7 @@ def manage_members(request, group_id):
         
         return redirect('chats:manage_members', group_id=group.id)
     
-    # Получаем доступных для добавления пользователей
+
     available_users = User.objects.filter(id__in=available_friend_ids)
     
     return render(request, 'chats/manage_members.html', {
@@ -427,17 +415,17 @@ def remove_member(request, group_id, user_id):
     group = get_object_or_404(Group, id=group_id)
     member = get_object_or_404(User, id=user_id)
     
-    # Только админ может удалять участников
+
     if group.admin != request.user:
         messages.error(request, "Только администратор может удалять участников")
         return redirect('chats:group_detail', group_id=group.id)
     
-    # Нельзя удалить самого себя (админа)
+
     if member == request.user:
         messages.error(request, "Вы не можете удалить себя из группы")
         return redirect('chats:manage_members', group_id=group.id)
     
-    # Проверяем, что пользователь действительно в группе
+
     if group.members.filter(id=member.id).exists():
         group.members.remove(member)
         messages.success(request, f"Пользователь {member.username} удален из группы")
@@ -448,10 +436,9 @@ def remove_member(request, group_id, user_id):
 
 @login_required
 def delete_group(request, group_id):
-    """Удаление группы (только админ)"""
     group = get_object_or_404(Group, id=group_id)
     
-    # Только админ может удалить группу
+
     if group.admin != request.user:
         messages.error(request, "Только администратор может удалить группу")
         return redirect('chats:group_detail', group_id=group.id)

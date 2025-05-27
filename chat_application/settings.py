@@ -128,7 +128,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Bishkek'
 
 USE_I18N = True
 
@@ -176,7 +176,7 @@ CHANNEL_LAYERS = {
 
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 EMAIL_HOST = "smtp.gmail.com"
-EMAIL_USE_TLS = False # make it True 
+EMAIL_USE_TLS = False 
 EMAIL_PORT = "587"
 EMAIL_HOST_USER = "YourEmail@gmail.com"
 EMAIL_HOST_PASSWORD = "YourPassword"

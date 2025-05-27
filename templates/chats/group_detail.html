@@ -3,7 +3,7 @@
 
 {% block content %}
 <style>
-/* Discord-like group info style */
+
 .group-info-container {
     max-width: 600px;
     margin: 20px auto;
@@ -318,7 +318,7 @@
     <a href="{% url 'chats:chat' %}" class="back-link">← Назад к чатам</a>
     
     <div class="group-info-container">
-        <!-- Заголовок группы -->
+
         <div class="group-header">
             {% if is_admin %}
             <div class="photo-actions">
@@ -352,9 +352,9 @@
             <p class="group-created">Создана {{ group.created_at|date:"d.m.Y" }}</p>
         </div>
         
-        <!-- Контент -->
+
         <div class="group-content">
-            <!-- Статистика -->
+
             <div class="stats-row">
                 <div class="stat-item">
                     <span class="stat-number">{{ group.members.count }}</span>
@@ -366,7 +366,7 @@
                 </div>
             </div>
             
-            <!-- Информация об администраторе -->
+
             <div class="info-section">
                 <div class="info-title">
                     👑 Администратор
@@ -374,7 +374,7 @@
                 <div class="info-value">{{ group.admin.username }}</div>
             </div>
             
-            <!-- Список участников -->
+
             <div class="info-section">
                 <div class="info-title">
                     👥 Участники ({{ group.members.count }})
@@ -389,7 +389,7 @@
                 </div>
             </div>
             
-            <!-- Кнопки действий -->
+ 
             <div class="action-buttons">
                 <a href="{% url 'chats:group_chat' group.id %}" class="btn-primary">
                     💬 Открыть чат
@@ -408,7 +408,7 @@
                 {% endif %}
             </div>
             
-            <!-- Админская панель -->
+
             {% if is_admin %}
             <div class="admin-section">
                 <div class="admin-title">
@@ -436,7 +436,7 @@
     </div>
 </div>
 
-<!-- Сообщения -->
+
 {% if messages %}
     <div style="position: fixed; top: 20px; right: 20px; z-index: 1000;">
         {% for message in messages %}
